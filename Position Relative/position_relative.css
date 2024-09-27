@@ -1,0 +1,39 @@
+body{
+    background-color: #222;
+}
+
+.box{
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(119, 96, 54);
+    position: relative; /*Posiciona a la caja como relativa y se puede mover con 4 propiedades nuevas, top,left,right,bottom. Pero para el navegador la caja sigue ocupando el espacio original */
+    z-index: 1;
+    margin: auto;
+    border: 1px solid black
+    
+}
+
+.box--blue{
+    background-color: rgb(28, 28, 145);
+    top: 75px;  /*La propiedad top tiene prioridad siempre antes que la de bottom*/
+    left: 45px;  /*Lo mismo sucede con left antes que right*/
+    z-index: 1; /*Modifica el eje Z para superponer o poner atras de las otras cajas*/
+}
+
+.box:first-child{
+    top: 150px;
+    left: 75px;
+    background-color: rgb(167, 25, 25);
+
+}
+
+
+.box:hover{
+    z-index: 3;
+    border: 1px solid rgb(206, 204, 204);
+    text-align: center;
+    font-weight: 900;
+}

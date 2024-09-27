@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background-color: #222;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+div {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #999;
+  border-bottom: 3px solid #000000;
+  border-top: 3px solid #000000;
+}
+
+/*Los elementos display block hace que ocupe toda la linea*/
+
+div a {
+  background-color: rgb(231, 231, 231);
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #222;
+  text-align: center;
+}
+
+/*Display inline-block es una combinacion entre linea y bloque*/
+
+.nav {
+  background-color: #77afe4;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.nav_list {
+  margin: 0;
+}
+
+.nav_item {
+  display: inline-block;
+  padding: 10px;
+  background-color: #77afe4;
+}
+
+.nav_link:hover {
+  background-color: #85c4ff;
+}
+
+.nav_link {
+  color: #232323;
+  text-decoration: none;
+}
+
+.link_button {
+  background-color: #a8d0f8;
+  border: 2px solid#98c6f1;
+  border-radius: 7px;
+  padding: 4px 8px;
+  margin-left: 50px;
+}
+
+/*display : none */ 

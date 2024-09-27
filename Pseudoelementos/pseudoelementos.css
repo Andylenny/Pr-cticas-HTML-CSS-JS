@@ -1,0 +1,46 @@
+body{
+    background-color: #222;
+    color: #666;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4em;
+}
+
+h1::first-letter{
+    color: #999;
+    font-size: 2em;
+    letter-spacing: -10px;
+}
+
+li::first-letter{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+p::first-line{
+    color: rgb(197, 197, 197);
+}
+
+p::selection{
+    background-color: rgb(201, 198, 198);
+    color: #222;
+}
+
+input::placeholder{
+    text-align: center;
+    font-weight: bold;
+    color: #6c6c6c;
+}
+
+li::marker{
+    color: rgb(193, 139, 39);
+}
+
+li::before{
+    content:' Antes: ';
+    color: rgb(179, 179, 178);
+}
+
+li::after{
+    content:' Despues ';
+    color: rgb(179, 179, 178);
+}

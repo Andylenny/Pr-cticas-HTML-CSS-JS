@@ -1,0 +1,82 @@
+body:has(.elem-6){
+    background-color: #222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1,h2{
+    width: fit-content;
+    margin:20px;
+    color: #999;
+}
+
+h1:hover{
+    color: white;
+}
+
+h2:active{
+    color: aquamarine;
+}
+
+li:first-child{
+    color: wheat;
+}
+
+li:nth-child(2){
+    color: yellow;
+}
+
+li:nth-child(3){
+    color: aquamarine;
+}
+
+li:last-child{
+    color: rgb(95, 129, 160);
+}
+
+.lista li{
+    color: #999;
+    
+}
+
+.lista li:nth-child(2n){
+    color: cyan;
+    
+}
+
+.lista li:nth-of-type(4){
+    color: beige;
+}
+
+.lista li:not(.elem-6){
+    font-size: 0.95em;
+}
+
+
+/*Seleccion del div en caso de estar vacío*/
+div:empty{
+    padding: 1px; 
+    background-color: rgb(130, 138, 148);
+
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+input[type="email"]:invalid{
+    background-color: rgb(228, 229, 230);
+
+}
+
+input[type="checkbox"]:checked{
+    width: 30px;
+    height: 30px;
+}
+
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: rgb(123, 123, 171);
+}

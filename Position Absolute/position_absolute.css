@@ -1,0 +1,31 @@
+body{
+    background-color: #222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(215, 76, 76);
+    color: wheat;
+}
+
+.box--blue{
+    background-color: rgb(57, 57, 159);
+    position: absolute; /*Con position absolute no ocupa lugar fisico en la pagina, y su punto de referencia para top,left,bottom,right es la etiqueta HTML o una etiqueta padre con position relative*/
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.box--green{
+    background-color: rgb(59, 132, 59);
+}

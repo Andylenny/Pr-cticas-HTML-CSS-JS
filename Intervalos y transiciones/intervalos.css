@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(224, 190, 127);
+    margin: auto;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+    border: 1px solid black;
+     /*La propiedad transition se utiliza en el elemento original*/
+    transition-property: background-color,border, left, color;
+    transition-duration: 1s;
+    transition-delay: 1s; /*En cuanto tiempo se empezara a activar la transicion*/
+    /*transition: left 1s */
+    /*La forma en la que va a transicionar se puede modificar mediante curvas de bezier: ease, ease in, ease in-out, linear*/
+}
+
+.box:hover{
+    background-color: blanchedalmond;
+    color: rebeccapurple;
+    border: 10px solid black;
+}
+
+.box-position{
+    margin: 0;
+    margin-top: 30px;
+    position: relative;
+    left:50px;
+}
+
+body:hover .box-position{
+    left: 700px;
+}

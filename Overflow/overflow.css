@@ -1,0 +1,24 @@
+body{
+    background-color: #2222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box{
+    width: 250px;
+    height: 200px;
+    background-color: beige;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+    overflow: auto;
+    overflow-wrap: break-word; /*Rompe las palabras */
+    overflow-wrap: anywhere; /*Rompe las palabras grandes si esta por desbordarse*/
+    /* text-overflow: ellipsis; pone puntos suspensivos cuando se va a desbordar el text*/
+    /* white-space: pre; Lo que hace pre es que respeta el codigo html con sus espacios entre los textos */
+    text-wrap: pretty;
+    
+}
+
+h1{
+    text-wrap: balance;
+}

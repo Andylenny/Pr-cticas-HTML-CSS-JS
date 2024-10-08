@@ -1,0 +1,43 @@
+body{
+    background-color: #2222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flexbox{
+    outline: 3px solid black;
+    display: flex; /*Display flex hace a la caja contenedora flexible y a sus hijas directas flex items*/
+    background-color: rgba(255, 0, 0, 0.509);
+    direction: ltr; /*ltr es el valor por defecto*/
+    flex-direction: row; /*row es el valor por defecto*/
+    flex-wrap: wrap;
+    justify-content:space-between; /*el primer elemento y el ultimo se ponen al principio y final del a caja y solo se mueven las cajas del medio*/
+    justify-content: space-around; /*Añade "margenes" que no se colapsan entre si separando los elementos*/
+    justify-content: space-evenly; /*Los margenes se colapsan entre si por lo tanto los elementos tienen la misma separacion de ambos lados*/
+    /* justify-content alinea los elementos del eje principal el valor por defecto es start*/
+    /* align-content alinea los elementos del eje cruzado como justify*/
+    /* align-items alinea los elementos del eje cruzado el valor por defecto es stretch*/
+    align-items: baseline; /*el texto de los items se alinea en la base*/
+    align-items: start; /*puede usarse para aumentar una caja de tamaño y que no se estiren todas*/
+
+}
+
+.flexbox--items{
+    color: white;
+    flex-basis: 100px; /*Se usa flex-basis, no width, determina cual es la medida en la que se va a empezar a encoger el elemento*/
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.505);
+    text-align: center;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow:2px 2px 3px black;
+    flex-grow: 2; /*Lo que hace flex grow es ocupar todo el espacio disponible y repartir en porciones el espacio a lo largo de la caja y darle un porcentaje de ese espacio al elemento */
+}
+
+.flexbox--items:first-child{
+    background-color: #75e17e;
+    order: 1;
+    flex-shrink: 0 ; /*Determina que tanto va a encogerse el item*/
+    flex-grow: 1; /*Lo que hace flex grow es ocupar todo el espacio disponible y repartir en porciones el espacio a lo largo de la caja y darle un porcentaje de ese espacio al elemento */
+    
+}

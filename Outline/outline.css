@@ -1,0 +1,60 @@
+body{
+    background-color: #2222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: beige;
+    border: 1px solid black;
+    outline: 2px solid rgb(255, 47, 0); /*El outline no ocupa espacio en el elemento, es solo visual*/
+    margin-top: 50px;
+}
+
+.first:hover{
+    outline: 7px solid rgb(255,47,0);
+}
+
+h2{
+    margin: 0;
+}
+
+.second:hover{
+    outline:7px double #a4ff06;
+}
+
+.third:hover{
+    outline: 4px dashed rgb(206, 6, 250);
+}
+
+#inp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.3px;
+}
+
+#inp:focus-visible{ /*Para sacar el outline de un input hay que sacarlo de esta manera por problemas de accesibilidad*/
+outline: none;
+}
+
+#inp:focus::placeholder{
+    color: blue;
+}
+
+#inp:focus{
+    color: blue;
+    
+}

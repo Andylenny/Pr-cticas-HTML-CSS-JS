@@ -1,0 +1,17 @@
+body{
+    background-color: #2226;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    /* Por defect object-fit: fill; */
+    /* object-fit: contain; Hace que la imagen entre al menos 1 vez en la resolucion q le dimos*/
+    /* object-fit: cover; Se adapta la imagen y puede moverse con object position */
+    /* object-fit: none; Usa la resolcion original del archivo*/
+margin: 20px 20px;
+border: 2px solid black;
+    object-fit: contain;
+}
